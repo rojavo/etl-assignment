@@ -16,7 +16,7 @@ This repository contains a Docker setup for running apache pyspark with a custom
 - `auxiliary_files/`: Directory with lists that were used to perform the data cleaning processes (animal_names.txt, condition_list.txt, verb_list.txt).
 - `EDA.ipynb`: Notebook where I record my first approach to data, two of the auxiliary lists used are also extracted.
 
-## Building and the docker image and run the container
+## Buildi the docker image and run the container
 After downloading the repository, builde the docker image ("etl_image" can be changed by other tags).
 ```bash
 docker build -t etl_image .
