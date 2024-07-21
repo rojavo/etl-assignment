@@ -1,0 +1,5 @@
+SELECT p."Park Name", s."Primary Fur Color", COUNT(*) AS color_count
+FROM Squirrel_Data s
+JOIN Park_Data p ON s."Park ID" = p."Park ID"
+GROUP BY p."Park Name", s."Primary Fur Color"
+ORDER BY p."Park Name", color_count DESC;

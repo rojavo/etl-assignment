@@ -1,0 +1,4 @@
+SELECT
+"Park Name",
+LENGTH("Other Animal Sightings") - LENGTH(REPLACE("Other Animal Sightings", ',', '')) + 1 AS other_animal_count
+FROM Park_Data;

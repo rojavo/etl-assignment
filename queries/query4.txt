@@ -1,0 +1,9 @@
+SELECT Activity, COUNT(*) AS ActivityCount
+FROM (
+    SELECT trim(value) AS Activity
+    FROM Squirrel_Data,
+        json_each('["' || replace(Activities, ' ', '","') || '"]')
+)
+GROUP BY Activity
+ORDER BY ActivityCount DESC
+LIMIT 10;

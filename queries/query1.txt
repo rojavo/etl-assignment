@@ -1,0 +1,4 @@
+SELECT p."Park Name", COUNT(s."Squirrel ID") AS squirrel_count 
+FROM Squirrel_Data s 
+JOIN Park_Data p ON s."Park ID" = p."Park ID" 
+GROUP BY p."Park Name";
