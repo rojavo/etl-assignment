@@ -23,7 +23,7 @@ docker build -t etl_image .
 ```
 Then run the docker containers using -v to ensure that the database is read and not deleted when the process ends (etl_volume can be changed by a volume name).
 ```bash
-docker run -v etl_volume:databases etl_iamge:latest
+docker run -v etl_volume:/app/databases etl_image:latest
 ```
 
 ## Outputs
